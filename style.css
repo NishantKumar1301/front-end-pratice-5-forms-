@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(36, 35, 35);
+    margin:8rem;
+    font-family: 'Roboto',sans-serif;
+}
+form{
+    width:30rem;
+    margin:3rem auto;
+    background-color: rgb(255,255,255);
+    padding:1rem;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 0.5rem;
+    display: block;
+}
+input,textarea,select{
+    width:100%;
+    display:block;
+    margin-bottom: 1rem;
+    font:inherit;
+    box-sizing: border-box;
+    border:1px solid rgb(184,230,121);
+    color:rgb(61,58,58);
+    padding:0.25rem;
+}
+input:focus,textarea:focus{
+    background-color: rgb(219,190,253);
+    color:rgb(32,5,63);
+    border-color: rgb(32,5,63);
+}
+button{
+    display:block;
+    font:normal 1rem 'Roboto',sans-serif;
+    font:inherit;
+    background-color: rgb(32,5,63);
+    color: white;
+    border:1px solid rgb(32,5,63);
+    padding: 0.23rem 1rem;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-bottom: 0.57rem;
+}
+button:hover{
+    background-color: rgb(54, 3, 113);
+    border-color: rgb(51, 21, 84);
+}
+.radio{
+    display: flex;
+}
+.radio input{
+    width:auto;
+    margin-right: 0.8rem;
+}
+.checkbox{
+    display:flex;
+}
+.checkbox input{
+    width:auto;
+    margin-right: 0.8rem;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/user-data" method="GET">
+        <label for="nishant">Your Name</label>
+        <input type="text" name="user-name" id="nishant" required="">
+        <label for="email">Your email address</label>
+        <input type="email" name="user-email" id="email" >
+        <label for="age">Age</label>
+        <input type="number" step="2" name="user-age" id="age" required min="7" max="80">
+        <label for="Adress">Address</label>
+        <textarea id="Adress" name="nishant"></textarea>
+        <label for="password">Your password</label>
+        <input type="password" name="user-password" id="password" requrired minlength="8">
+        <label for="date">Date of Birth</label>
+        <input type="date" name="user-date" id="date" required min="1992-01-01" max="2023-01-01">
+        <hr>
+        <label for="dropdown">Your favourite color</label>
+        <select id="dropdown">
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Yellow</option>
+            <option>purple</option>
+        </select>
+        <hr>
+        <h2>How Should We Verify Your Account?</h2>
+        <div class="radio">
+            <input type="radio" name="verify" id="text" value="text-message">
+            <label for="text">Via text message(SMS)</label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="verify" id="phone" value="phone call">
+            <label for="phone">Via a Phone Call</label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="verify" id="email" value="email-address">
+            <label for="email">Via an email</label>
+        </div>
+        <br>
+        <h3>Which of the following is the state of india?</h3>
+        <div class="checkbox">
+            <input type="checkbox" name="question" id="bihar" value="bihar">
+            <label for="bihar">Bihar</label> 
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="question" id="kolkata" value="kolkata">
+            <label for="lolkata">kolkata</label> 
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="question" id="Both" value="Both">
+            <label for="Both">Both of the above</label> 
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="question" id="none" value="none">
+            <label for="none">None of these</label> 
+        </div>
+        <hr>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
